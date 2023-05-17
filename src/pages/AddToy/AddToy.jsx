@@ -3,8 +3,27 @@ import React from "react";
 const AddToy = () => {
   const handleAdd = (event) => {
     event.preventDefault();
-    const username = event.target.sellername.value;
+    const sellername = event.target.sellername.value;
     const email = event.target.email.value;
+    const name = event.target.name.value;
+    const pic = event.target.pic.value;
+    const subcategory = event.target.subcategory.value;
+    const price = event.target.price.value;
+    const rating = event.target.rating.value;
+    const quantity = event.target.quantity.value;
+    const details = event.target.details.value;
+    const toyData = {
+      sellername,
+      email,
+      name,
+      pic,
+      subcategory,
+      price,
+      rating,
+      quantity,
+      details,
+    };
+    console.log(toyData);
   };
 
   return (
@@ -24,8 +43,8 @@ const AddToy = () => {
           </div>
         </div>
         <div className="md:px-12 mt-10 bg-[#F5EAEA] p-4">
-          {/* first div */}
           <form onSubmit={handleAdd} className="pb-16">
+            {/* first div */}
             <div className="md:flex gap-4 items-center">
               <div className="form-control text-xl md:w-1/2 ">
                 <label className="label">
@@ -171,7 +190,7 @@ const AddToy = () => {
             <input
               type="submit"
               value="Add Toy"
-              className="btn btn-block mt-5"
+              className="btn btn-block mt-5  text-xl font-serif bg-[#66347F]"
             />
           </form>
         </div>
