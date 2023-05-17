@@ -44,20 +44,20 @@ const AddToy = () => {
   return (
     <div>
       <div>
-        <div
-          className="hero mt-16 md:px-12  h-[30vh]"
+        {/* <div
+          className="hero mt-16 md:mx-12  h-[30vh]"
           style={{
             backgroundImage: `url("https://images.unsplash.com/photo-1613722860912-50da017439c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")`,
           }}
         >
-          <div className="hero-overlay bg-opacity-60"></div>
+          <div className="hero-overlay  bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md">
               <h1 className="mb-5 text-5xl font-bold">Add Dolls</h1>
             </div>
           </div>
-        </div>
-        <div className="md:px-12 mt-10 bg-[#F5EAEA] p-4">
+        </div> */}
+        <div className="md:mx-12 mt-10 bg-[#F5EAEA] p-4">
           <form onSubmit={handleAdd} className="pb-16">
             {/* first div */}
             <div className="md:flex gap-4 items-center">

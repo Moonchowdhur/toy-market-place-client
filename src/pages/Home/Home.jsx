@@ -2,7 +2,8 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-14 md:mx-12 ">
+      {/* banner */}
       <div
         className="hero h-[80vh]"
         style={{
