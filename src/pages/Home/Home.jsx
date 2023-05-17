@@ -26,6 +26,59 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* gallary section */}
+      <div className="mt-16">
+        <h2 className="text-center text-4xl font-bold tracking-widest font-['cursive']">
+          Gallary Section
+        </h2>
+        <p className="text-center text-xl font-bold tracking-widest font-['cursive']">
+          Most Popular Dolls
+        </p>
+        <div className="grid mt-8 gap-5 md:grid-cols-3 grid-cols-1">
+          <div className="p-4 bg-[#66347F] shadow-xl  shadow-[#66347F]">
+            <img
+              src="https://m.media-amazon.com/images/I/715NgkS8p7L._SL1500_.jpg"
+              alt=""
+              className="w-[300px] mx-auto h-[300px]"
+            />
+          </div>
+          <div className="p-4 shadow-xl bg-[#FEF2F4]  shadow-[#66347F]">
+            <img
+              src="https://rukminim1.flixcart.com/image/416/416/kdukgi80/doll-doll-house/m/y/h/cute-baby-doll-mmb-original-imafunuytxaj2xth.jpeg?q=70"
+              alt=""
+              className="w-[300px] mx-auto h-[300px]"
+            />
+          </div>
+          <div className="p-4 shadow-xl bg-[#FEF2F4]  shadow-[#66347F]">
+            <img
+              src="https://m.media-amazon.com/images/I/715NgkS8p7L._SL1500_.jpg"
+              alt=""
+              className="w-[300px] mx-auto h-[300px]"
+            />
+          </div>
+          <div className="p-4  shadow-xl bg-[#FEF2F4]  shadow-[#66347F]">
+            <img
+              src="https://rukminim1.flixcart.com/image/416/416/kdukgi80/doll-doll-house/m/y/h/cute-baby-doll-mmb-original-imafunuytxaj2xth.jpeg?q=70"
+              alt=""
+              className="w-[300px] mx-auto h-[300px]"
+            />
+          </div>
+          <div className="p-4 shadow-xl bg-[#FEF2F4]  shadow-[#66347F]">
+            <img
+              src="https://m.media-amazon.com/images/I/715NgkS8p7L._SL1500_.jpg"
+              alt=""
+              className="w-[300px] mx-auto h-[300px]"
+            />
+          </div>
+          <div className="p-4 shadow-xl bg-[#FEF2F4]  shadow-[#66347F]">
+            <img
+              src="https://rukminim1.flixcart.com/image/416/416/kdukgi80/doll-doll-house/m/y/h/cute-baby-doll-mmb-original-imafunuytxaj2xth.jpeg?q=70"
+              alt=""
+              className="w-[300px] mx-auto h-[300px]"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
