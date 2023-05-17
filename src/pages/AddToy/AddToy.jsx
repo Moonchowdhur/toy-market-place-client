@@ -1,4 +1,5 @@
 import React from "react";
+import swal from "sweetalert";
 
 const AddToy = () => {
   const handleAdd = (event) => {
@@ -24,6 +25,20 @@ const AddToy = () => {
       details,
     };
     console.log(toyData);
+    fetch("http://localhost:5000/dolls", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(toyData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          swal("Toy Added", "success", "success");
+        }
+      });
   };
 
   return (
@@ -149,7 +164,7 @@ const AddToy = () => {
                 </label>
                 <label className="input-group">
                   <input
-                    type="number"
+                    type="text"
                     name="rating"
                     placeholder="Enter Rating"
                     className="input input-bordered w-full"
