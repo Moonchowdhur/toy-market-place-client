@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const MyToysDetails = ({ mytoy, index }) => {
+const MyToysDetails = ({ mytoy, index, handleDelete }) => {
   const {
     _id,
     sellername,
@@ -27,14 +27,17 @@ const MyToysDetails = ({ mytoy, index }) => {
       <td>{price}k</td>
       <td>{rating}</td>
       <td>{quantity}</td>
-      <td className="w-5">{details.slice(0, 50)}...</td>
-      <td className="flex gap-2 items-center">
-        <Link>
+      <td className="w-5">{details.slice(0, 40)}...</td>
+      <td className="flex p-6 gap-2 items-center">
+        <Link to={`/update/${_id}`}>
           <button className="bg-[#66347F] text-white font-serif px-1 py-1 rounded-lg">
             Update
           </button>
         </Link>
-        <button className="bg-[#66347F] text-white font-serif px-1 py-1 rounded-lg">
+        <button
+          onClick={() => handleDelete(_id)}
+          className="bg-[#66347F] text-white font-serif px-1 py-1 rounded-lg"
+        >
           Delete
         </button>
       </td>

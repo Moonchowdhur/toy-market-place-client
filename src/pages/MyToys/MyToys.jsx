@@ -13,6 +13,37 @@ const MyToys = () => {
       .then((data) => setToys(data));
   }, []);
 
+  const handleDelete = (id) => {
+    console.log(id);
+    swal({
+      title: "Do you want to Delete?",
+      text: "Once deleted, you will not be able to recover this toy!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        // swal("Toy has been deleted", {
+        //   icon: "success",
+        // });
+        fetch(`http://localhost:5000/dolls/${id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            if (data.deletedCount > 0) {
+              swal("Toy has been deleted", {
+                icon: "success",
+              });
+              const remaining = toys.filter((t) => t._id !== id);
+              setToys(remaining);
+            }
+          });
+      }
+    });
+  };
+
   return (
     <div className="md:mx-12 p-4 mt-8">
       <div>
@@ -62,6 +93,7 @@ const MyToys = () => {
             <tbody>
               {toys.map((mytoy, index) => (
                 <MyToysDetails
+                  handleDelete={handleDelete}
                   index={index + 1}
                   key={mytoy._id}
                   mytoy={mytoy}
