@@ -8,7 +8,7 @@ const AllToy = () => {
   return (
     <div className="md:px-12 mt-8 p-4">
       <div>
-        <h2 className="text-center bg-[#FFD95A] p-3 underline font-['cursive'] text-4xl font-bold tracking-widest ">
+        <h2 className="text-center w-1/4 mx-auto bg-black text-white p-3 underline font-['cursive'] text-4xl font-bold tracking-widest ">
           All Toys Here
         </h2>
       </div>
@@ -18,27 +18,27 @@ const AllToy = () => {
             {/* head */}
             <thead>
               <tr>
-                <th className="bg-[#66347F] text-white font-serif font-bold"></th>
-                <th className="bg-[#66347F] text-white font-serif font-bold text-base">
+                <th className="bg-[#F5EAEA] font-serif font-bold"></th>
+                <th className="bg-[#F5EAEA] text-black font-serif font-bold text-base">
                   Seller
                 </th>
-                <th className="bg-[#66347F] text-white font-serif font-bold text-base">
+                <th className="bg-[#F5EAEA] font-serif font-bold text-base">
                   Toy Name
                 </th>
-                <th className="bg-[#66347F] text-white font-serif font-bold text-base">
+                <th className="bg-[#F5EAEA] font-serif font-bold text-base">
                   Image
                 </th>
-                <th className="bg-[#66347F] text-white font-serif font-bold text-base">
+                <th className="bg-[#F5EAEA] font-serif font-bold text-base">
                   Sub-category
                 </th>
-                <th className="bg-[#66347F] text-white font-serif font-bold text-base">
+                <th className="bg-[#F5EAEA] font-serif font-bold text-base">
                   Price
                 </th>
-                <th className="bg-[#66347F] text-white font-serif font-bold text-base">
+                <th className="bg-[#F5EAEA] font-serif font-bold text-base">
                   Available <br />
                   Quantity
                 </th>
-                <th className="bg-[#66347F] text-white font-serif font-bold text-base">
+                <th className="bg-[#F5EAEA] font-serif font-bold text-base">
                   Details
                 </th>
               </tr>

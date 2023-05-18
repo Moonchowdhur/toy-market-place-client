@@ -37,7 +37,7 @@ const Navbar = () => {
                 All Toys
               </NavLink>
             </li>
-            {/* <li>
+            <li>
               <NavLink
                 to="/mytoys"
                 className={({ isActive, isPending }) =>
@@ -66,7 +66,7 @@ const Navbar = () => {
               >
                 Blog
               </NavLink>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>

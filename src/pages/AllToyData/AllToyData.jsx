@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AllToyData = ({ toys, index }) => {
   //   console.log(toys);
-  console.log(index);
+  //   console.log(index);
   const {
     _id,
     sellername,
@@ -28,7 +28,7 @@ const AllToyData = ({ toys, index }) => {
       <td>{price}k</td>
       <td>{quantity}</td>
       <td>
-        <Link>
+        <Link to={`/details/${_id}`}>
           <button className="bg-[#66347F] text-white font-serif px-2 py-1 rounded-lg">
             View Details
           </button>
