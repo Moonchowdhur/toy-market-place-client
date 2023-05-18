@@ -2,7 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
 
-const ToyDetails = () => {
+const ViewDetails = () => {
   const loadedToyDetails = useLoaderData();
   console.log(loadedToyDetails);
   const {
@@ -68,4 +68,4 @@ const ToyDetails = () => {
   );
 };
 
-export default ToyDetails;
+export default ViewDetails;

@@ -153,7 +153,7 @@ const Update = () => {
               </label>
               <label className="input-group">
                 <input
-                  type="number"
+                  type="text"
                   defaultValue={price}
                   name="price"
                   placeholder="Enter Price"

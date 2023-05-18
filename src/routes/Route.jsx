@@ -9,6 +9,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Update from "../pages/Update/Update";
+import ViewDetails from "../pages/ViewDetails/ViewDetails";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,17 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <ToyDetails></ToyDetails>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/dolls/${params.id}`),
+      },
+
+      {
+        path: "/viewdetails/:id",
+        element: (
+          <PrivateRoute>
+            <ViewDetails></ViewDetails>
           </PrivateRoute>
         ),
         loader: ({ params }) =>
