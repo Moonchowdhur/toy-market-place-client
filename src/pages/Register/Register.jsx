@@ -24,18 +24,17 @@ const Register = () => {
     const password = event.target.password.value;
 
     setError("");
-    console.log(email, password, confirm);
 
-    if (!/(?=.*[A-Z])/.test(password)) {
-      setError("Password has to be uppercase letters.");
-      return;
-    } else if (!/(?=.*[!@#$&*])/.test(password)) {
-      setError("Password has to be one special case letter.");
-      return;
-    } else if (!/.{6}/.test(password)) {
-      setError("Password has to be length 6.");
-      return;
-    }
+    // if (!/(?=.*[A-Z])/.test(password)) {
+    //   setError("Password has to be uppercase letters.");
+    //   return;
+    // } else if (!/(?=.*[!@#$&*])/.test(password)) {
+    //   setError("Password has to be one special case letter.");
+    //   return;
+    // } else if (!/.{6}/.test(password)) {
+    //   setError("Password has to be length 6.");
+    //   return;
+    // }
     createUser(email, password)
       .then((result) => {
         const user = result.user;
