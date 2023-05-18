@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { Authcontext } from "../pages/provider/Authprovider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(Authcontext);
+
+  const logoutBtn = () => {
+    logOut()
+      .then(() => {
+        // Sign-out successful.
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
+
   return (
     <div className="bg-[#66347F] text-white font-serif font-bold  md:mx-12 p-4">
       <div className="flex items-center justify-between">
@@ -37,26 +50,30 @@ const Navbar = () => {
                 All Toys
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/mytoys"
-                className={({ isActive, isPending }) =>
-                  isActive ? "text-[#FFD95A]" : ""
-                }
-              >
-                My Toys
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/add"
-                className={({ isActive, isPending }) =>
-                  isActive ? "text-[#FFD95A]" : ""
-                }
-              >
-                Add A Toy
-              </NavLink>
-            </li>
+            {user && (
+              <li>
+                <NavLink
+                  to="/mytoys"
+                  className={({ isActive, isPending }) =>
+                    isActive ? "text-[#FFD95A]" : ""
+                  }
+                >
+                  My Toys
+                </NavLink>
+              </li>
+            )}
+            {user && (
+              <li>
+                <NavLink
+                  to="/add"
+                  className={({ isActive, isPending }) =>
+                    isActive ? "text-[#FFD95A]" : ""
+                  }
+                >
+                  Add A Toy
+                </NavLink>
+              </li>
+            )}
             <li>
               <NavLink
                 to="/blog"
@@ -67,6 +84,20 @@ const Navbar = () => {
                 Blog
               </NavLink>
             </li>
+            {user ? (
+              <button onClick={logoutBtn}>Logout</button>
+            ) : (
+              <li>
+                <NavLink
+                  to="/login"
+                  className={({ isActive, isPending }) =>
+                    isActive ? "text-[#FFD95A]" : ""
+                  }
+                >
+                  Login
+                </NavLink>
+              </li>
+            )}
           </ul>
         </div>
       </div>
@@ -75,3 +106,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// trF$%3
