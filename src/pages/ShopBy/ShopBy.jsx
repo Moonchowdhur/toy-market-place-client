@@ -41,22 +41,34 @@ const ShopBy = () => {
           Shop by Category
         </h2>
         <div className="mt-6 flex justify-center ">
-          <div className="tabs mx-auto">
+          <div className="tabs gap-3 mx-auto">
             <button
               onClick={handleBarbie}
-              className={`tab tab-bordered ${designtwo ? "tab-active" : ""}`}
+              className={`tab tab-bordered text-xl ${
+                designtwo
+                  ? "tab-active bg-purple-900 text-white"
+                  : "bg-yellow-500 font-bold px-2 "
+              }`}
             >
               Barbie
             </button>
             <button
               onClick={handleBabydoll}
-              className={`tab tab-bordered ${designthree ? "tab-active" : ""}`}
+              className={`tab tab-bordered  text-xl ${
+                designthree
+                  ? "tab-active bg-purple-900 text-white"
+                  : "bg-yellow-500 font-bold px-2"
+              }`}
             >
               Baby Dolls
             </button>
             <button
               onClick={handleAmerican}
-              className={`tab tab-bordered ${designone ? "tab-active" : ""}`}
+              className={`tab text-xl tab-bordered ${
+                designone
+                  ? "tab-active bg-purple-900 text-white"
+                  : "bg-yellow-500 font-bold px-2"
+              }`}
             >
               American girl
             </button>

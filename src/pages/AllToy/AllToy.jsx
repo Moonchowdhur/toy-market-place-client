@@ -1,16 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import AllToyData from "../AllToyData/AllToyData";
 
 const AllToy = () => {
-  const loadedAllToy = useLoaderData();
+  // const loadedAllToy = useLoaderData();
   //   console.log(loadedAllToy);
+  const [loadedAllToy, setLoadedAllToy] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/dolls")
+      .then((res) => res.json())
+      .then((data) => setLoadedAllToy(data));
+  }, []);
+
+  const handleSearch = (event) => {
+    const toyName = event.target.value;
+    console.log(toyName);
+    if (toyName) {
+      fetch(`http://localhost:5000/dolls?name=${toyName}`)
+        .then((res) => res.json())
+        .then((data) => setLoadedAllToy(data));
+    }
+  };
+
   return (
     <div className="md:px-12 mt-8 p-4">
       <div>
         <h2 className="text-center w-1/4 mx-auto bg-black text-white p-3 underline font-['cursive'] text-4xl font-bold tracking-widest ">
           All Toys Here
         </h2>
+        <div onClick={handleSearch} className="flex form-control">
+          <label className="input-group flex items-center justify-end">
+            <input
+              type="text"
+              placeholder="Enter Toy Name"
+              className="input input-bordered"
+            />
+            <span className="bg-fuchsia-900 py-4 text-white">Search</span>
+          </label>
+        </div>
       </div>
       <div>
         <div className=" mt-8 overflow-x-auto">
