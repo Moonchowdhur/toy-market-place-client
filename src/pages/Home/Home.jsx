@@ -1,5 +1,6 @@
 import React from "react";
 import ShopBy from "../ShopBy/ShopBy";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Home = () => {
   return (
@@ -14,11 +15,11 @@ const Home = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-4xl md:text-6xl font-serif tracking-wider font-bold">
+            <h1 className="mb-5 text-4xl md:text-6xl  tracking-wider font-bold">
               Better <span className="text-[#E7CBCB]">Kids</span>, Better
               <span className="text-[#E7CBCB]">World</span>
             </h1>
-            <p className="mb-5  text-xl font-serif tracking-wider ">
+            <p className="mb-5  text-xl tracking-wider ">
               Doll always represented the fact that a woman has choices.
             </p>
             <button className="btn text-base font-serif tracking-wider bg-[#66347F]">
@@ -27,6 +28,45 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* barbie section */}
+
+      <div className="mt-20  mb-16">
+        <h2 className="text-center text-4xl font-bold tracking-widest font-['cursive']">
+          SHOP BARBIE
+        </h2>
+        <div className="grid grid-cols-1 mt-4 md:grid-cols-3 md:mx-20 ">
+          <div className="flex flex-col items-center">
+            <img
+              src="https://m.media-amazon.com/images/I/81e3HSsOpmL._SL1500_.jpg"
+              alt=""
+              className="p-4 w-[500px] h-[250px]"
+            />
+            <h2 className="text-center mx-auto text-xl font-medium">
+              Playsets
+            </h2>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://images.unsplash.com/photo-1655637497028-8414ffaa6c93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              alt=""
+              className="p-4 w-[500px] h-[250px]"
+            />
+            <h2 className="text-center mx-auto text-xl font-medium">Dolls</h2>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://5.imimg.com/data5/ND/MZ/KA/SELLER-97139128/my-splendid-doll-house-500x500.jpg"
+              alt=""
+              className="p-4 w-[500px] h-[250px]"
+            />
+            <h2 className="text-center mx-auto text-xl font-medium">
+              Barbie House
+            </h2>
+          </div>
+        </div>
+      </div>
+
       {/* gallary section */}
       <div className="mt-16 mb-16">
         <h2 className="text-center text-4xl font-bold tracking-widest font-['cursive']">
@@ -80,6 +120,34 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/*another section */}
+      <div className="mt-20 md:mx-20 mb-16">
+        <h2 className="text-center text-4xl font-bold tracking-wider font-['cursive']">
+          More Gifts For Baby
+        </h2>
+        <div className="md:flex items-center gap-4">
+          <div className="shadow p-7  h-[350px] bg-[#F6F1F1]">
+            <h2 className="text-5xl font-bold mb-3 tracking-wider">
+              BABY TOYS <br></br> & GIFTS
+            </h2>
+            <p className="mb-5 tracking-wider">
+              We have Handpicked hgh-quality gifts that engage curiosity and
+              inspire exploration. Get them learning through play!
+            </p>
+            <button className="bg-fuchsia-900 flex gap-2 items-center font-bold tracking-wider text-white rounded-lg p-3">
+              Collection <AiOutlineArrowRight className="text-2xl" />
+            </button>
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/61+6HDuWcQL._SL1200_.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
       <ShopBy></ShopBy>
     </div>
   );

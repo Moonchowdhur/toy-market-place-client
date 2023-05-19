@@ -11,8 +11,7 @@ import swal from "sweetalert";
 import { Authcontext } from "../provider/Authprovider";
 
 const Login = () => {
-  const { signUser, resetPassword, googleSignIn, gitSignIn, twitterSignin } =
-    useContext(Authcontext);
+  const { signUser, resetPassword, googleSignIn } = useContext(Authcontext);
   const emailRef = useRef();
   const location = useLocation();
   let navigate = useNavigate();
@@ -71,18 +70,6 @@ const Login = () => {
       });
   };
 
-  const gitSign = () => {
-    gitSignIn()
-      .then((result) => {
-        const user = result.user;
-        console.log(user);
-        swal("GitHub Login successfull", "", "success");
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
-      });
-  };
-
   return (
     <div className="flex justify-center my-7 ">
       <div className="w-96 p-6 shadow-md bg-white rounded">
@@ -105,10 +92,7 @@ const Login = () => {
               </p>
             )}
           </div>
-          {/* <div  className='mt-3'>
-                <label htmlFor="username" className='block text-base mb-2'>Username</label>
-                <input type="text" name="name" id="name" placeholder='Enter Username' className='border w-full px-2 focus:outline-none text-base py-1 focus:ring-0 focus:border-gray-600 rounded' />
-              </div> */}
+
           <div className="mt-3">
             <label htmlFor="email" className="block text-base mb-2">
               Email
@@ -176,9 +160,6 @@ const Login = () => {
         <div className="text-3xl flex items-center justify-center mt-4 gap-5">
           <button onClick={googleSign}>
             <FcGoogle />
-          </button>
-          <button onClick={gitSign}>
-            <AiOutlineGithub className="text-blue-500" />
           </button>
         </div>
         <button className="mt-3">

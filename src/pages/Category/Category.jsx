@@ -31,7 +31,7 @@ const Category = ({ toy }) => {
         <div className="p-4 md:w-1/2 ">
           <h2 className=" font-medium text-3xl">Name:{name}</h2>
           <div className="flex mt-4 mb-6 gap-2">
-            <h2 className="font-bold">Price:${price}</h2>
+            <h2 className="font-bold">Price:{price}K</h2>
             <p className="flex font-bold items-center ">
               <span className="">Rating</span>
               <AiFillStar className="text-yellow-500 font-bold" />:{rating}
