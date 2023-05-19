@@ -47,6 +47,14 @@ const MyToys = () => {
     });
   };
 
+  const handleSelect = (event) => {
+    console.log(event.target.value);
+    const selected = event.target.value;
+    fetch(`http://localhost:5000/dolls?sort=${selected}&email=${user.email}`)
+      .then((res) => res.json())
+      .then((data) => setToys(data));
+  };
+
   return (
     <div className="md:mx-12 p-4  md:mt-8 mt-52 ">
       <div>
@@ -54,6 +62,16 @@ const MyToys = () => {
           My Toys
         </h2>
       </div>
+      <select
+        onChange={handleSelect}
+        className="select select-bordered w-11/12 max-w-xs"
+      >
+        <option disabled selected>
+          Sorting
+        </option>
+        <option>Ascending</option>
+        <option>Descending</option>
+      </select>
       <div>
         <div className="mt-7 overflow-x-auto">
           <table className="table w-full">

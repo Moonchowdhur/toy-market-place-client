@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ShopBy from "../ShopBy/ShopBy";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Hooks from "../Hooks/Hooks";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   Hooks("Home");
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className="md:mt-14 mt-48 md:mx-12 ">
@@ -38,7 +44,10 @@ const Home = () => {
         <h2 className="text-center text-4xl font-bold tracking-widest font-['cursive']">
           SHOP BARBIE
         </h2>
-        <div className="grid grid-cols-1 mt-4 md:grid-cols-3 md:mx-20 ">
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 mt-4 md:grid-cols-3 md:mx-20 "
+        >
           <div className="flex flex-col items-center">
             <img
               src="https://m.media-amazon.com/images/I/81e3HSsOpmL._SL1500_.jpg"
@@ -78,7 +87,10 @@ const Home = () => {
         <p className="text-center text-xl font-bold tracking-widest font-['cursive']">
           Most Popular Dolls
         </p>
-        <div className="grid mt-8 gap-8 md:grid-cols-3 grid-cols-1">
+        <div
+          data-aos="fade-up"
+          className="grid mt-8 gap-8 md:grid-cols-3 grid-cols-1"
+        >
           <div className="p-4 mb-6 rounded-xl bg-[#E4D0D0] shadow-xl  shadow-[#66347F]">
             <img
               src="https://m.media-amazon.com/images/I/715NgkS8p7L._SL1500_.jpg"
