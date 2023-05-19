@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import AllToyData from "../AllToyData/AllToyData";
+import Hooks from "../Hooks/Hooks";
 
 const AllToy = () => {
   // const loadedAllToy = useLoaderData();
   //   console.log(loadedAllToy);
+  Hooks("All Toy");
   const [loadedAllToy, setLoadedAllToy] = useState([]);
 
   useEffect(() => {

@@ -1,8 +1,11 @@
 import React from "react";
 import ShopBy from "../ShopBy/ShopBy";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Hooks from "../Hooks/Hooks";
 
 const Home = () => {
+  Hooks("Home");
+
   return (
     <div className="mt-14 md:mx-12 ">
       {/* banner */}

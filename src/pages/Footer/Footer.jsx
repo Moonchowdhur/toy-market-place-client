@@ -4,8 +4,8 @@ import { AiFillPhone, AiOutlineMail, AiFillHome } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="bg-[#4C4C6D] text-neutral-content">
-      <footer className="footer md:px-14 p-10 ">
+    <div className="bg-[#4C4C6D] md:px-14 p-4 text-neutral-content">
+      <footer className="footer ">
         <div>
           <div className="flex items-center gap-3">
             <img

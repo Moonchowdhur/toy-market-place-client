@@ -9,6 +9,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import swal from "sweetalert";
 import { Authcontext } from "../provider/Authprovider";
+import Hooks from "../Hooks/Hooks";
 
 const Login = () => {
   const { signUser, resetPassword, googleSignIn } = useContext(Authcontext);
@@ -18,7 +19,7 @@ const Login = () => {
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
   const [eye, setEye] = useState(false);
-
+  Hooks("login");
   let from = location.state?.from?.pathname || "/";
 
   const handleLoginbtn = (event) => {

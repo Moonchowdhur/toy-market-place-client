@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
         <div>
           <ul
-            className={`md:flex  md:bg-transparent bg-[#643843] font-bold md:static absolute text-xl items-center gap-5  ${
+            className={`md:flex gap-8 md:bg-transparent bg-[#643843] font-bold md:static absolute text-xl items-center  ${
               open ? "top-24 right-7 p-3 " : "-top-36 right-0"
             }`}
           >
@@ -87,7 +87,7 @@ const Navbar = () => {
                   isActive ? "text-[#FFD95A]" : ""
                 }
               >
-                Blog
+                Blogs
               </NavLink>
             </li>
             {user ? (

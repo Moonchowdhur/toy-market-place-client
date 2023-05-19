@@ -2,10 +2,11 @@ import React from "react";
 import { useContext } from "react";
 import swal from "sweetalert";
 import { Authcontext } from "../provider/Authprovider";
+import Hooks from "../Hooks/Hooks";
 
 const AddToy = () => {
   const { user } = useContext(Authcontext);
-
+  Hooks("Add Toy");
   const handleAdd = (event) => {
     event.preventDefault();
     const sellername = event.target.sellername.value;
