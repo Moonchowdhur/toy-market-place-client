@@ -58,7 +58,14 @@ const Register = () => {
   };
 
   return (
-    <div className="flex justify-center my-7">
+    <div className="md:flex md:mt-8 mt-36 gap-10 items-center justify-center my-7">
+      <div>
+        <img
+          src="https://i.ibb.co/g7hPW4h/Mobile-login-pana.png"
+          className="w-[500px]"
+          alt=""
+        />
+      </div>
       <div className="w-96 p-6 shadow-md bg-white rounded">
         <div className="text-center mb-3 font-bold text-3xl justify-center gap-3 flex items-center">
           <FaUser className="text-fuchsia-700" />
@@ -155,7 +162,7 @@ const Register = () => {
           </div>
           <button
             type="submit"
-            className="mt-5 disabled:bg-gray-200 disabled:text-black font-semibold text-xl border-2 w-full px-3 py-2 rounded-lg border-indigo-700 bg-indigo-700 hover:bg-transparent hover:text-indigo-700 text-white "
+            className="mt-5 disabled:bg-gray-200 disabled:text-black font-semibold text-xl border-2 w-full px-3 py-2 rounded-lg border-fuchsia-900 bg-fuchsia-900 hover:bg-transparent hover:text-fuchsia-900 text-white "
           >
             Create an account
           </button>

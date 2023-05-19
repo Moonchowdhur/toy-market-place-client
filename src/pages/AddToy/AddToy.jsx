@@ -47,21 +47,13 @@ const AddToy = () => {
   };
 
   return (
-    <div>
+    <div className="md:mt-8 mt-52">
+      <div>
+        <h2 className="text-center mb-5 md:mb-0 md:w-1/4 w-1/2  md:text-4xl text-2xl mx-auto bg-black p-3 text-white font-['cursive'] font-bold tracking-wider ">
+          Add Toy
+        </h2>
+      </div>
       <div className="overflow-x-hidden">
-        {/* <div
-          className="hero mt-16 w-full md:mx-12  h-[30vh]"
-          style={{
-            backgroundImage: `url("https://images.unsplash.com/photo-1613722860912-50da017439c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")`,
-          }}
-        >
-          <div className="hero-overlay  bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">Add Dolls</h1>
-            </div>
-          </div>
-        </div> */}
         <div className="md:mx-12 mt-10 bg-[#F5EAEA] p-4">
           <form onSubmit={handleAdd} className="pb-16">
             {/* first div */}
@@ -112,6 +104,7 @@ const AddToy = () => {
                 <label className="input-group">
                   <input
                     type="text"
+                    required
                     name="name"
                     placeholder="Enter Toy Name"
                     className="input input-bordered w-full"
@@ -128,6 +121,7 @@ const AddToy = () => {
                   <input
                     type="url"
                     name="pic"
+                    required
                     placeholder="Enter Picturl URL"
                     className="input input-bordered w-full"
                   />
@@ -146,6 +140,7 @@ const AddToy = () => {
                   <input
                     type="text"
                     name="subcategory"
+                    required
                     placeholder="Enter Sub-Category"
                     className="input input-bordered w-full"
                   />
@@ -159,6 +154,7 @@ const AddToy = () => {
                   <input
                     type="text"
                     name="price"
+                    required
                     placeholder="Enter Price"
                     className="input input-bordered w-full"
                   />
@@ -174,6 +170,7 @@ const AddToy = () => {
                 <label className="input-group">
                   <input
                     type="text"
+                    required
                     name="rating"
                     placeholder="Enter Rating"
                     className="input input-bordered w-full"
@@ -189,6 +186,7 @@ const AddToy = () => {
                 <label className="input-group">
                   <input
                     type="number"
+                    required
                     name="quantity"
                     placeholder="Enter Available Quantity"
                     className="input input-bordered w-full"
@@ -206,6 +204,7 @@ const AddToy = () => {
                 </label>
                 <textarea
                   name="details"
+                  required
                   className="textarea textarea-bordered h-24"
                   placeholder="Details Description"
                 ></textarea>

@@ -48,14 +48,14 @@ const MyToys = () => {
   };
 
   return (
-    <div className="md:mx-12 p-4 mt-8">
+    <div className="md:mx-12 p-4  md:mt-8 mt-52 ">
       <div>
-        <h2 className="text-center w-1/4 mx-auto bg-black p-3 text-white font-['cursive'] text-4xl font-bold tracking-wider ">
+        <h2 className="text-center mb-5 md:mb-0 md:w-1/4 w-1/2  md:text-4xl text-2xl mx-auto bg-black p-3 text-white font-['cursive'] font-bold tracking-wider ">
           My Toys
         </h2>
       </div>
       <div>
-        <div className="overflow-x-auto">
+        <div className="mt-7 overflow-x-auto">
           <table className="table w-full">
             {/* head */}
             <thead>

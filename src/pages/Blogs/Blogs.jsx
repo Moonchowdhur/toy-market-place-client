@@ -5,9 +5,9 @@ const Blog = () => {
   Hooks("Blogs");
   return (
     <>
-      <div className="md:mt-6 mt-32 p-4 md:px-12">
+      <div className="md:mt-6 mt-48 p-4 md:px-12">
         <div className="flex text-[#41644A] font-bold gap-3 items-center justify-center">
-          <h1 className="md:text-5xl text-xl underline pb-2">Blogs</h1>
+          <h1 className="md:text-5xl text-4xl underline pb-2">Blogs</h1>
         </div>
         <div className=" bg-[#F6F1F1] text-cyan-800 my-7 p-7 rounded">
           <h2 className="text-4xl font-bold my-3">

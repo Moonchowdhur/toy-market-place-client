@@ -1,6 +1,12 @@
 import React from "react";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import { AiFillPhone, AiOutlineMail, AiFillHome } from "react-icons/ai";
+import {
+  AiFillPhone,
+  AiOutlineMail,
+  AiFillHome,
+  AiFillGithub,
+} from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,9 +26,15 @@ const Footer = () => {
 
           <p>This website is different kind of dolls.</p>
           <div className="flex text-3xl items-center gap-4 my-5">
-            <BsFacebook className="text-blue-500" />
-            <BsInstagram className="text-orange-600" />
-            <BsTwitter className="text-blue-500" />
+            <a href="https://www.facebook.com/meema.chowdhury.5?mibextid=ZbWKwL">
+              <BsFacebook className="text-blue-500" />
+            </a>
+            <a href="https://www.instagram.com/meema.chowdhury/?igshid=MzRlODBiNWFlZA%3D%3D">
+              <BsInstagram className="text-orange-600" />
+            </a>
+            <a href="">
+              <AiFillGithub className="text-blue-500 text-4xl" />
+            </a>
           </div>
         </div>
 
@@ -41,7 +53,7 @@ const Footer = () => {
           <a className="link link-hover">Terms & Conditons</a>
           <a className="link link-hover">Privacy Policy</a>
         </div>
-        <div>
+        <div className="mb-10">
           <span className="footer-title">Contact Us</span>
           <div className="flex items-center gap-2">
             <AiFillPhone className="text-blue-500 text-3xl" />

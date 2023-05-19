@@ -7,7 +7,7 @@ const Home = () => {
   Hooks("Home");
 
   return (
-    <div className="mt-14 md:mx-12 ">
+    <div className="md:mt-14 mt-48 md:mx-12 ">
       {/* banner */}
       <div
         className="hero h-[80vh]"

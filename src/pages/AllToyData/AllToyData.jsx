@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const AllToyData = ({ toys, index }) => {
-  //   console.log(toys);
-  //   console.log(index);
   const {
     _id,
     sellername,
@@ -25,7 +26,7 @@ const AllToyData = ({ toys, index }) => {
         <img src={pic} className="w-10 h-10 rounded-full" alt="" />
       </td>
       <td>{subcategory}</td>
-      <td>{price}k</td>
+      <td>${price}</td>
       <td>{quantity}</td>
       <td>
         <Link to={`/details/${_id}`}>
@@ -34,6 +35,7 @@ const AllToyData = ({ toys, index }) => {
           </button>
         </Link>
       </td>
+      <ToastContainer />
     </tr>
   );
 };

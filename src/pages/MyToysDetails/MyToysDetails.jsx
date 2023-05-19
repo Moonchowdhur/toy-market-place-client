@@ -24,7 +24,7 @@ const MyToysDetails = ({ mytoy, index, handleDelete }) => {
       </td>
       <td>{name}</td>
       <td>{subcategory}</td>
-      <td>{price}k</td>
+      <td>${price}</td>
       <td>{rating}</td>
       <td>{quantity}</td>
       <td className="w-5">{details.slice(0, 40)}...</td>

@@ -33,7 +33,7 @@ const Navbar = () => {
         <div>
           <ul
             className={`md:flex gap-8 md:bg-transparent bg-[#643843] font-bold md:static absolute text-xl items-center  ${
-              open ? "top-24 right-7 p-3 " : "-top-36 right-0"
+              open ? "top-20 right-7 p-3 " : "-top-48 right-0"
             }`}
           >
             <li>

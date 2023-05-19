@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Category from "../Category/Category";
 
 const ShopBy = () => {
@@ -33,6 +33,10 @@ const ShopBy = () => {
     setDesignone(false);
     setDesigntwo(false);
   };
+
+  useEffect(() => {
+    handleBarbie(); // Call handleAmerican when the component mounts
+  }, []);
 
   return (
     <>

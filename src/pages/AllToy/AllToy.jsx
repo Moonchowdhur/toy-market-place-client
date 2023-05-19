@@ -26,9 +26,9 @@ const AllToy = () => {
   };
 
   return (
-    <div className="md:px-12 mt-8 p-4">
+    <div className="md:px-12  mt-52 md:mt-8 p-4">
       <div>
-        <h2 className="text-center w-1/4 mx-auto bg-black text-white p-3 underline font-['cursive'] text-4xl font-bold tracking-widest ">
+        <h2 className="text-center  mb-5 md:mb-0 md:w-1/4 w-1/2  md:text-4xl text-2xl mx-auto bg-black text-white p-3 underline font-['cursive'] font-bold tracking-widest ">
           All Toys Here
         </h2>
         <div onClick={handleSearch} className="flex form-control">

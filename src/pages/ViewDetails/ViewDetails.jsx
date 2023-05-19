@@ -1,9 +1,12 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
+import Hooks from "../Hooks/Hooks";
 
 const ViewDetails = () => {
   const loadedToyDetails = useLoaderData();
+
+  Hooks("Details");
   console.log(loadedToyDetails);
   const {
     _id,
@@ -18,15 +21,15 @@ const ViewDetails = () => {
     details,
   } = loadedToyDetails;
   return (
-    <div className="md:mx-12 p-4 mt-8">
-      <h2 className="text-center w-1/4 mx-auto bg-black p-3 text-white font-['cursive'] text-4xl font-bold tracking-wider ">
+    <div className="md:mx-12 md:mt-8 mt-52 p-4">
+      <h2 className="text-center md:w-1/4 mx-auto bg-black p-3 text-white font-['cursive'] text-4xl font-bold tracking-wider ">
         Details of {name}
       </h2>
       <div className="mt-8 md:flex  gap-5">
         <div className="md:w-1/2 p-4 bg-[#F5EAEA] rounded-lg">
           <img
             src={pic}
-            className="w-[400px] mx-auto h-[400px] rounded-full"
+            className="md:w-[400px] w-[250px] h-[250px] mx-auto md:h-[400px] rounded-full"
             alt=""
           />
         </div>
@@ -37,15 +40,14 @@ const ViewDetails = () => {
               <span className="text-[#66347F] font-bold">Seller Name:</span>
               {sellername}
             </p>
-            <p className="mt-2 font-bold">
-              <span className="text-[#66347F]">Seller Email:</span>
+            <p className="mt-2 font-bold md:text-lg text-sm">
+              <span className="text-[#66347F] ">Seller Email:</span>
               {email}
             </p>
           </div>
-          <div className="flex mt-6 font-bold text-lg items-center gap-5">
+          <div className="md:flex mt-6 font-bold text-lg items-center gap-5">
             <p>
-              <span className="text-[#66347F]">Price:</span>
-              {price}k
+              <span className="text-[#66347F]">Price:</span>${price}
             </p>
             <p className="flex items-center ">
               <span className="text-[#66347F]">Rating</span>

@@ -45,8 +45,8 @@ const Update = () => {
   };
 
   return (
-    <div className="md:mx-12 p-4 mt-8">
-      <h2 className="text-center w-1/4 mx-auto bg-black p-3 text-white font-['cursive'] text-4xl font-bold tracking-wider ">
+    <div className="md:mx-12 md:mt-8 mt-52 p-4 ">
+      <h2 className="text-center mt-4  md:w-1/4 mx-auto bg-black p-3 text-white font-['cursive'] text-4xl font-bold tracking-wider ">
         Update of {name}
       </h2>
       <div className=" mt-10 bg-[#F5EAEA] p-4">

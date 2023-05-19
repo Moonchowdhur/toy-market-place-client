@@ -1,8 +1,19 @@
 import React from "react";
+import { useContext } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { Authcontext } from "../provider/Authprovider";
+import swal from "sweetalert";
 
 const Category = ({ toy }) => {
+  const { user } = useContext(Authcontext);
+
+  const handleDetails = () => {
+    if (!user) {
+      swal("You have to log in first to view details", "", "warning");
+    }
+  };
+
   const {
     sellername,
     email,
@@ -31,7 +42,7 @@ const Category = ({ toy }) => {
         <div className="p-4 md:w-1/2 ">
           <h2 className=" font-medium text-3xl">Name:{name}</h2>
           <div className="flex mt-4 mb-6 gap-2">
-            <h2 className="font-bold">Price:{price}K</h2>
+            <h2 className="font-bold">Price:${price}</h2>
             <p className="flex font-bold items-center ">
               <span className="">Rating</span>
               <AiFillStar className="text-yellow-500 font-bold" />:{rating}
@@ -41,7 +52,7 @@ const Category = ({ toy }) => {
             to={`/viewdetails/${_id}`}
             className=" text-white bg-[#66347F] px-2 py-2 rounded-xl"
           >
-            View Details
+            <button onClick={handleDetails}>View Details</button>
           </Link>
         </div>
       </div>
