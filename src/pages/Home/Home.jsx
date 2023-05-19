@@ -80,7 +80,7 @@ const Home = () => {
       </div>
 
       {/* gallary section */}
-      <div className="mt-16 mb-16">
+      <div className="mt-20 mb-16">
         <h2 className="text-center text-4xl font-bold tracking-widest font-['cursive']">
           Gallary Section
         </h2>
@@ -112,21 +112,21 @@ const Home = () => {
               className="w-[300px] rounded-full mx-auto h-[300px]"
             />
           </div>
-          <div className="p-4  shadow-xl rounded-xl bg-[#E4D0D0]  shadow-[#66347F]">
+          <div className="p-4  rounded-full bg-[#E4D0D0] shadow-lg   shadow-[#66347F]">
             <img
               src="https://i.pinimg.com/originals/8b/b5/72/8bb572d13e90e3a57de4c183a146d311.jpg"
               alt=""
               className="w-[300px] mx-auto rounded-full h-[300px]"
             />
           </div>
-          <div className="p-4 shadow-xl   rounded-xl bg-[#E4D0D0]   shadow-[#66347F]">
+          <div className="p-4  rounded-full bg-[#E4D0D0] shadow-lg  shadow-[#66347F]">
             <img
               src="https://static.wixstatic.com/media/175410_f4be824886c74db8a06911fc267fc57c~mv2.webp/v1/fill/w_1000,h_1000,al_c/175410_f4be824886c74db8a06911fc267fc57c~mv2.webp"
               alt=""
               className="w-[300px] rounded-full mx-auto h-[300px]"
             />
           </div>
-          <div className="p-4 shadow-xl  rounded-xl bg-[#E4D0D0]  shadow-[#66347F]">
+          <div className="p-4  rounded-full bg-[#E4D0D0] shadow-lg shadow-[#66347F]">
             <img
               src="https://m.media-amazon.com/images/I/810GK68cbYL._SY550_.jpg"
               alt=""
