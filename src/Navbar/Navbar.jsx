@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Authcontext } from "../pages/provider/Authprovider";
+import { FaHamburger } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
   const { user, logOut } = useContext(Authcontext);
-
+  const [open, setOpen] = useState(false);
   const logoutBtn = () => {
     logOut()
       .then(() => {
@@ -29,7 +31,11 @@ const Navbar = () => {
           </h2>
         </div>
         <div>
-          <ul className="flex text-xl items-center gap-5">
+          <ul
+            className={`md:flex  md:bg-transparent bg-[#643843] font-bold md:static absolute text-xl items-center gap-5  ${
+              open ? "top-24 right-7 p-3 " : "-top-36 right-0"
+            }`}
+          >
             <li>
               <NavLink
                 to="/"
@@ -85,7 +91,16 @@ const Navbar = () => {
               </NavLink>
             </li>
             {user ? (
-              <button onClick={logoutBtn}>Logout</button>
+              <div className="flex  items-center gap-2">
+                <img
+                  src={user.photoURL}
+                  className="w-10 h-10 rounded-full"
+                  alt={user.displayName}
+                  title={user.displayName && user.displayName}
+                />
+
+                <button onClick={logoutBtn}>Logout</button>
+              </div>
             ) : (
               <li>
                 <NavLink
@@ -99,6 +114,10 @@ const Navbar = () => {
               </li>
             )}
           </ul>
+        </div>
+        {/* hambarg menu */}
+        <div className="md:hidden text-3xl" onClick={() => setOpen(!open)}>
+          {open ? <ImCross /> : <FaHamburger />}
         </div>
       </div>
     </div>

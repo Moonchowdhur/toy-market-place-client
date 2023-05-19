@@ -22,19 +22,10 @@ const Register = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
+    const photo = event.target.photo.value;
 
     setError("");
 
-    // if (!/(?=.*[A-Z])/.test(password)) {
-    //   setError("Password has to be uppercase letters.");
-    //   return;
-    // } else if (!/(?=.*[!@#$&*])/.test(password)) {
-    //   setError("Password has to be one special case letter.");
-    //   return;
-    // } else if (!/.{6}/.test(password)) {
-    //   setError("Password has to be length 6.");
-    //   return;
-    // }
     createUser(email, password)
       .then((result) => {
         const user = result.user;
@@ -44,6 +35,7 @@ const Register = () => {
 
         updateProfile(user, {
           displayName: name,
+          photoURL: photo,
         })
           .then(() => {
             //
@@ -94,10 +86,23 @@ const Register = () => {
             </label>
             <input
               type="text"
+              required
               name="name"
               id="name"
               placeholder="Enter Username"
               className="border w-full px-2 focus:outline-none text-base py-1 focus:ring-0 focus:border-gray-600 rounded"
+            />
+          </div>
+          <div className="mt-3">
+            <label htmlFor="photo" className="block text-base mb-2">
+              Photo URL
+            </label>
+            <input
+              type="text"
+              name="photo"
+              placeholder="Enter Photo URL"
+              className="border w-full px-2 focus:outline-none text-base py-1 focus:ring-0 focus:border-gray-600 rounded"
+              required
             />
           </div>
           <div className="mt-3">
