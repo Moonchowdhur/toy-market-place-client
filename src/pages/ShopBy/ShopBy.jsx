@@ -8,7 +8,9 @@ const ShopBy = () => {
   const [designthree, setDesignthree] = useState(false);
 
   const handleAmerican = () => {
-    fetch("http://localhost:5000/dolls?subcategory=American%20girl")
+    fetch(
+      "https://assignment-project-server-two.vercel.app/dolls?subcategory=American%20girl"
+    )
       .then((res) => res.json())
       .then((data) => setCategory(data));
     setDesignone(true);
@@ -17,7 +19,9 @@ const ShopBy = () => {
   };
 
   const handleBarbie = () => {
-    fetch("http://localhost:5000/dolls?subcategory=Barbie")
+    fetch(
+      "https://assignment-project-server-two.vercel.app/dolls?subcategory=Barbie"
+    )
       .then((res) => res.json())
       .then((data) => setCategory(data));
     setDesigntwo(true);
@@ -26,7 +30,9 @@ const ShopBy = () => {
   };
 
   const handleBabydoll = () => {
-    fetch("http://localhost:5000/dolls?subcategory=Baby%20Dolls")
+    fetch(
+      "https://assignment-project-server-two.vercel.app/dolls?subcategory=Baby%20Dolls"
+    )
       .then((res) => res.json())
       .then((data) => setCategory(data));
     setDesignthree(true);

@@ -44,7 +44,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/dolls/${params.id}`),
+          fetch(
+            `https://assignment-project-server-two.vercel.app/dolls/${params.id}`
+          ),
       },
 
       {
@@ -55,14 +57,18 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/dolls/${params.id}`),
+          fetch(
+            `https://assignment-project-server-two.vercel.app/dolls/${params.id}`
+          ),
       },
 
       {
         path: "/update/:id",
         element: <Update></Update>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/dolls/${params.id}`),
+          fetch(
+            `https://assignment-project-server-two.vercel.app/dolls/${params.id}`
+          ),
       },
       {
         path: "/mytoys",

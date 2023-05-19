@@ -28,7 +28,7 @@ const Update = () => {
       details,
     };
     console.log(toyData);
-    fetch(`http://localhost:5000/dolls/${_id}`, {
+    fetch(`https://assignment-project-server-two.vercel.app/dolls/${_id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

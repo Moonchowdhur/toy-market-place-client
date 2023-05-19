@@ -89,23 +89,23 @@ const Home = () => {
         </p>
         <div
           data-aos="fade-up"
-          className="grid mt-8 gap-8 md:grid-cols-3 grid-cols-1"
+          className="grid mt-8 p-4 gap-8 md:grid-cols-3 grid-cols-1"
         >
-          <div className="p-4 mb-6 rounded-xl bg-[#E4D0D0] shadow-xl  shadow-[#66347F]">
+          <div className="p-4 mb-6 rounded-full bg-[#E4D0D0] shadow-lg  shadow-[#66347F]">
             <img
               src="https://m.media-amazon.com/images/I/715NgkS8p7L._SL1500_.jpg"
               alt=""
               className="w-[300px] rounded-full p-2 mx-auto h-[300px]"
             />
           </div>
-          <div className="p-4 mb-6  shadow-xl rounded-xl bg-[#E4D0D0]  shadow-[#66347F]">
+          <div className="p-4 mb-6  rounded-full shadow-lg bg-[#E4D0D0]  shadow-[#66347F]">
             <img
               src="https://rukminim1.flixcart.com/image/416/416/kdukgi80/doll-doll-house/m/y/h/cute-baby-doll-mmb-original-imafunuytxaj2xth.jpeg?q=70"
               alt=""
-              className="w-[300px] rounded-full  mx-auto h-[300px]"
+              className="w-[300px] rounded-full p-2 mx-auto h-[300px]"
             />
           </div>
-          <div className="p-4  mb-6 shadow-xl rounded-xl bg-[#E4D0D0]  shadow-[#66347F]">
+          <div className="p-4  mb-6  rounded-full bg-[#E4D0D0] shadow-lg  shadow-[#66347F]">
             <img
               src="https://images.unsplash.com/photo-1603362305258-3b4ea8bee447?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
               alt=""

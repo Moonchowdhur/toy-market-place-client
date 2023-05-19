@@ -10,7 +10,7 @@ const AllToy = () => {
   const [loadedAllToy, setLoadedAllToy] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/dolls")
+    fetch("https://assignment-project-server-two.vercel.app/dolls")
       .then((res) => res.json())
       .then((data) => setLoadedAllToy(data));
   }, []);
@@ -19,7 +19,9 @@ const AllToy = () => {
     const toyName = event.target.value;
     console.log(toyName);
     if (toyName) {
-      fetch(`http://localhost:5000/dolls?name=${toyName}`)
+      fetch(
+        `https://assignment-project-server-two.vercel.app/dolls?name=${toyName}`
+      )
         .then((res) => res.json())
         .then((data) => setLoadedAllToy(data));
     }

@@ -11,7 +11,9 @@ const MyToys = () => {
 
   Hooks("My Toy");
   useEffect(() => {
-    fetch(`http://localhost:5000/dolls?email=${user.email}`)
+    fetch(
+      `https://assignment-project-server-two.vercel.app/dolls?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setToys(data));
   }, []);
@@ -29,7 +31,7 @@ const MyToys = () => {
         // swal("Toy has been deleted", {
         //   icon: "success",
         // });
-        fetch(`http://localhost:5000/dolls/${id}`, {
+        fetch(`https://assignment-project-server-two.vercel.app/dolls/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -50,7 +52,9 @@ const MyToys = () => {
   const handleSelect = (event) => {
     console.log(event.target.value);
     const selected = event.target.value;
-    fetch(`http://localhost:5000/dolls?sort=${selected}&email=${user.email}`)
+    fetch(
+      `https://assignment-project-server-two.vercel.app/dolls?sort=${selected}&email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setToys(data));
   };

@@ -10,7 +10,10 @@ const PrivateRoute = ({ children }) => {
 
   if (loading) {
     return (
-      <div className="radial-progress text-green-500" style={{ "--value": 70 }}>
+      <div
+        className="radial-progress text-center text-green-500"
+        style={{ "--value": 70 }}
+      >
         70%
       </div>
     );
