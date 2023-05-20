@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="md:mt-14 mt-48 md:mx-12 ">
+    <div className="md:mt-14 mb-20 mt-48 md:mx-12 ">
       {/* banner */}
       <div
         className="hero h-[80vh]"
@@ -141,7 +141,7 @@ const Home = () => {
         <h2 className="text-center text-4xl font-bold tracking-wider font-['cursive']">
           More Gifts For Baby
         </h2>
-        <div className="md:flex items-center gap-4">
+        <div className="md:flex mt-8 md:mt-5 items-center gap-4">
           <div className="shadow p-7  h-[350px] bg-[#F6F1F1]">
             <h2 className="text-5xl font-bold mb-3 tracking-wider">
               BABY TOYS <br></br> & GIFTS

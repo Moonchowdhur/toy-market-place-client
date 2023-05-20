@@ -72,7 +72,7 @@ const Login = () => {
   };
 
   return (
-    <div className="md:flex mb-7  mt-36 gap-10 items-center justify-center md:mt-7 ">
+    <div className="md:flex mb-20 mt-36 gap-10 items-center justify-center md:mt-7 ">
       {/* login pic */}
       <div className="">
         <img

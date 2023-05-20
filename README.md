@@ -1,3 +1,7 @@
+# Live Link:
+
+- https://toy-marketplace-29f59.web.app/
+
 # Project Details:
 
 - My Website name is Dolls Haunter.This website is different type of dolls like Barbie, Baby Dolls and Amercian girl.
@@ -14,3 +18,5 @@
 - In My toy section, there are toy's information for registered users and here user can update and delete also.
 
 - In Add toy section, registered users can add a toy information like toy name,image,price, qauntity,rating,details.
+
+* In Blog section, there are four question-answers like, what is an access token and refresh token? How do they work, compare SQL and NoSQL databases, what is express js What is Nest JS and what is MongoDB aggregate and how does it work.

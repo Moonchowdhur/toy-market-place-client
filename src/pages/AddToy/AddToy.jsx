@@ -47,7 +47,7 @@ const AddToy = () => {
   };
 
   return (
-    <div className="md:mt-8 mt-52">
+    <div className="md:mt-8 mb-20 mt-52">
       <div>
         <h2 className="text-center mb-5 md:mb-0 md:w-1/4 w-1/2  md:text-4xl text-2xl mx-auto bg-black p-3 text-white font-['cursive'] font-bold tracking-wider ">
           Add Toy

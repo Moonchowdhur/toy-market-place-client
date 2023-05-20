@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
-import { sendEmailVerification, updateProfile } from "firebase/auth";
+import { updateProfile } from "firebase/auth";
 import swal from "sweetalert";
 import { Authcontext } from "../provider/Authprovider";
 
@@ -58,7 +58,7 @@ const Register = () => {
   };
 
   return (
-    <div className="md:flex md:mt-8 mt-36 gap-10 items-center justify-center my-7">
+    <div className="md:flex mb-20 md:mt-8 mt-36 gap-10 items-center justify-center my-7">
       <div>
         <img
           src="https://i.ibb.co/g7hPW4h/Mobile-login-pana.png"

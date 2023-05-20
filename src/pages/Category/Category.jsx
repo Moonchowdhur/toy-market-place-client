@@ -30,7 +30,7 @@ const Category = ({ toy }) => {
   console.log(toy, _id);
 
   return (
-    <div className="border bg-[#F5EBEB] p-4 border-[#66347F] rounded-lg shadow-2xl ">
+    <div className="border bg-[#F0F0F0] p-4 border-[#66347F] rounded-lg shadow-xl ">
       <div className="flex ">
         <div className="md:w-1/2 ">
           <img

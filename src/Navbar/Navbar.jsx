@@ -125,5 +125,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// trF$%3

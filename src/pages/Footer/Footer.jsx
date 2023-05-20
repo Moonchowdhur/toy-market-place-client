@@ -71,7 +71,7 @@ const Footer = () => {
       </footer>
       <hr />
       <div className="flex  justify-around md:px-14 p-10 items-center py-5">
-        <p>@2023 Dolls Haunter. All Rights Reserved</p>
+        <p>&copy;2023 Dolls Haunter. All Rights Reserved</p>
         <p>Powered by Dolls Haunter</p>
       </div>
     </div>

@@ -28,7 +28,7 @@ const AllToy = () => {
   };
 
   return (
-    <div className="md:px-12  mt-52 md:mt-8 p-4">
+    <div className="md:px-12 mb-20 mt-52 md:mt-8 p-4">
       <div>
         <h2 className="text-center  mb-5 md:mb-0 md:w-1/4 w-1/2  md:text-4xl text-2xl mx-auto bg-black text-white p-3 underline font-['cursive'] font-bold tracking-widest ">
           All Toys Here

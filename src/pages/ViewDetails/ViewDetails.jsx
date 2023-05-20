@@ -21,7 +21,7 @@ const ViewDetails = () => {
     details,
   } = loadedToyDetails;
   return (
-    <div className="md:mx-12 md:mt-8 mt-52 p-4">
+    <div className="md:mx-12 mb-20 md:mt-8 mt-52 p-4">
       <h2 className="text-center md:w-1/4 mx-auto bg-black p-3 text-white font-['cursive'] text-4xl font-bold tracking-wider ">
         Details of {name}
       </h2>

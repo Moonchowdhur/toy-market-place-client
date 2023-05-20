@@ -60,7 +60,7 @@ const MyToys = () => {
   };
 
   return (
-    <div className="md:mx-12 p-4  md:mt-8 mt-52 ">
+    <div className="md:mx-12 p-4 mb-20 md:mt-8 mt-52 ">
       <div>
         <h2 className="text-center mb-5 md:mb-0 md:w-1/4 w-1/2  md:text-4xl text-2xl mx-auto bg-black p-3 text-white font-['cursive'] font-bold tracking-wider ">
           My Toys
@@ -68,7 +68,7 @@ const MyToys = () => {
       </div>
       <select
         onChange={handleSelect}
-        className="select select-bordered w-11/12 max-w-xs"
+        className="select select-bordered mt-3 w-11/12 max-w-xs"
       >
         <option disabled selected>
           Sorting
