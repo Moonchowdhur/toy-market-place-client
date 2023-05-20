@@ -19,9 +19,7 @@ const Footer = () => {
               alt=""
               className="w-10 h-10 rounded-full"
             />
-            <span className="footer-title text-3xl font-bold">
-              Dolls Haunter
-            </span>
+            <span className="footer-title text-3xl font-bold">Toy Town</span>
           </div>
 
           <p>This website is different kind of dolls.</p>
@@ -61,7 +59,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-2">
             <AiOutlineMail className="text-red-500 text-3xl" />
-            <p>dollshaunter12@gmail.com</p>
+            <p>toytownr12@gmail.com</p>
           </div>
           <div className="flex items-center gap-2">
             <AiFillHome className="text-blue-500 text-3xl" />
@@ -71,8 +69,8 @@ const Footer = () => {
       </footer>
       <hr />
       <div className="flex  justify-around md:px-14 p-10 items-center py-5">
-        <p>&copy;2023 Dolls Haunter. All Rights Reserved</p>
-        <p>Powered by Dolls Haunter</p>
+        <p>&copy;2023 Toy Town. All Rights Reserved</p>
+        <p>Powered by Toy Town</p>
       </div>
     </div>
   );

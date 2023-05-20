@@ -40,12 +40,15 @@ const Category = ({ toy }) => {
           />
         </div>
         <div className="p-4 md:w-1/2 ">
-          <h2 className=" font-medium text-3xl">Name:{name}</h2>
-          <div className="flex mt-4 mb-6 gap-2">
-            <h2 className="font-bold">Price:${price}</h2>
-            <p className="flex font-bold items-center ">
+          <h2 className=" font-medium text-xl text-fuchsia-800 md:text-3xl">
+            Name: {name}
+          </h2>
+          <div className="md:flex mt-4 mb-8 gap-7 ">
+            <h2 className="font-medium text-base">Price: ${price}</h2>
+            <p className="flex gap-1 font-medium  items-center ">
               <span className="">Rating</span>
-              <AiFillStar className="text-yellow-500 font-bold" />:{rating}
+              <AiFillStar className="text-yellow-500 text-xl font-bold" />:{" "}
+              {rating}
             </p>
           </div>
           <Link

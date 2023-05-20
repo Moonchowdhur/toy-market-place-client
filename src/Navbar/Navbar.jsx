@@ -27,7 +27,7 @@ const Navbar = () => {
             className="w-10 h-10 rounded-full"
           />
           <h2 className="text-3xl">
-            <span className="text-[#FFD95A] "> Dolls </span>Haunter
+            <span className="text-[#FFD95A] "> Toy </span>Town
           </h2>
         </div>
         <div>
