@@ -40,7 +40,7 @@ const ViewDetails = () => {
               <span className="text-[#66347F] font-bold">Seller Name:</span>
               {sellername}
             </p>
-            <p className="mt-2 font-bold md:text-lg text-sm">
+            <p className="mt-2 font-bold md:text-lg text-xs ">
               <span className="text-[#66347F] ">Seller Email:</span>
               {email}
             </p>

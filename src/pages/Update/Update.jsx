@@ -1,9 +1,10 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import Hooks from "../Hooks/Hooks";
 
 const Update = () => {
   const loadedUpdatedToy = useLoaderData();
-
+  Hooks("Update");
   const {
     _id,
     sellername,
